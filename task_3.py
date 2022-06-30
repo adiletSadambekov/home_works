@@ -1,9 +1,7 @@
-
+from math import factorial
 def zeros(n: int):
-    facto: int = 1
+    facto: int = factorial(n)
     result: int = 0
-    for i in range(1, n+1):
-        facto *= i
     for i in reversed(tuple(str(facto))):
         if i == '0':
             result += 1

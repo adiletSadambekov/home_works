@@ -1,17 +1,17 @@
 def bananas(s: str) -> set:
-    result = set()
+    result: set = set()
     first_count: int = 0
     last_count: int = 0
     first_len: str = ''
-    last_len: str = ''
-    banana: str = ''
-    banan: str = ''
+    last_len: str  = ''
+    banana: str  = ''
+    banan: str  = ''
     trigger: bool = True
     trigger3: bool = False
     trigger2: bool = False
-    two_step: int = 0
-    two_step2: int = 0
-    two_step3: int = 0
+    two_step: int  = 0
+    two_step2: int  = 0
+    two_step3: int  = 0
     
     for i in s:
         if len(banana) == 7:
